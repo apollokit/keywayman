@@ -151,7 +151,7 @@ def execute_modified_keystroke(
             keyboard_ctlr.release(last_modifier)
 
 def execute_keys(keys: List[str]):
-    logger.debug("KeystrokeCmdExec: typing keys: '{}'".format(keys))
+    logger.debug("typing keys: '{}'".format(keys))
     
     for hotkey in keys:
         # deal with delay

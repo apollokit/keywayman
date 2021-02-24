@@ -1,0 +1,2 @@
+- name: test
+  keys: ["super+tab"]

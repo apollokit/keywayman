@@ -1,0 +1,1233 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cli",
+				"click\tpyclickcli"
+			],
+			[
+				"_reg_",
+				"_reg_cmd_def_kwargs"
+			],
+			[
+				"mesh",
+				"mesh_dir"
+			],
+			[
+				"image",
+				"image_name"
+			],
+			[
+				"inf",
+				"inference_time"
+			],
+			[
+				"infere",
+				"inference_time"
+			],
+			[
+				"hotk",
+				"hotkey_mod_down"
+			],
+			[
+				"thre",
+				"threading"
+			],
+			[
+				"imp",
+				"import"
+			],
+			[
+				"shut",
+				"shutdown\t🕮"
+			],
+			[
+				"audio_",
+				"audio_frames_q"
+			],
+			[
+				"infer",
+				"inference_output_q"
+			],
+			[
+				"HOTK",
+				"HOTKEY_LET"
+			],
+			[
+				"start_",
+				"start_time_dt"
+			],
+			[
+				"scale",
+				"scaled_width"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"ind",
+				"index_name"
+			],
+			[
+				"scaled",
+				"scaled_width"
+			],
+			[
+				"dark",
+				"darknet_width"
+			],
+			[
+				"time",
+				"time_request_dt"
+			],
+			[
+				"get_",
+				"get_images_and_detected_objs"
+			],
+			[
+				"annot",
+				"annotations"
+			],
+			[
+				"Det",
+				"DetectedObject"
+			],
+			[
+				"frame_path",
+				"get_frame_file_path"
+			],
+			[
+				"ima",
+				"image_file_paths"
+			],
+			[
+				"image_fi",
+				"image_file_path_to_detected_obj"
+			],
+			[
+				"fo",
+				"format"
+			],
+			[
+				"fra",
+				"frame_dir"
+			],
+			[
+				"FRAM",
+				"FRAME_NAME_FORMAT"
+			],
+			[
+				"cach",
+				"cache_dir"
+			],
+			[
+				"vid",
+				"video_s3_full_path"
+			],
+			[
+				"vid_",
+				"vid_s3_path_to_local_path"
+			],
+			[
+				"get",
+				"get_cached_video_path"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "keywayman.py",
+			"settings":
+			{
+				"buffer_size": 741,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "keystrokes.yaml",
+			"settings":
+			{
+				"buffer_size": 34,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "keystrokes.py",
+			"settings":
+			{
+				"buffer_size": 5557,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "import logging\n\nimport click\n\nlogger = logging.getLogger(__name__)\nlogger.setLevel(logging.DEBUG)\n\nform = \"%(asctime)s %(levelname)-8s %(funcName)-15s %(message)s\"\nlogging.basicConfig(format=form,\n                    datefmt=\"%H:%M:%S\") \n\n@click.group()\ndef cli():\n    \"\"\"This function is necessary for the click CLI to work.\"\"\"\n\n@cli.command()\n@click.option('--camera', type=int, default=None, \n    help='The integer camera identifier. 0 if only one camera connected.')\n@click.option('--video', default=None, \n        help='Path to the video file. Only used if'\n        'the camera argument is not supplied')\n@click.option('--detector_type',\n    default='darknet', \n    type=click.Choice([\n        'darknet',\n        'xnor'], case_sensitive=False),\n    help='The detector type to use.')\n@click.option(\"--use_existing/--no-use_existing\",\n    is_flag=True,\n    default=False,\n    help=\"Whether or not to reload existing file info and object counts.\")\n\ndef go(\n        camera: int,\n        video: str,\n        detector_type,\n        use_existing: bool\n    ):\n    logger.info(f'hey')\n\nif __name__ == '__main__':\n    cli()",
+			"file": "blah.py",
+			"file_size": 1118,
+			"file_write_time": 132586017074323974,
+			"settings":
+			{
+				"buffer_size": 1118,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"mov",
+				"File: Move"
+			],
+			[
+				"valid",
+				"Pretty JSON: Validate"
+			],
+			[
+				"val",
+				"Pretty JSON: Validate"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"de",
+				"File: Delete"
+			],
+			[
+				"convert space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"spac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"new view",
+				"File: New View into File"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"rename",
+				"Rename File"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pret",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"autoc",
+				"Dictionary Auto Complete: Toggle"
+			],
+			[
+				"aauto",
+				"Dictionary Auto Complete: Toggle"
+			],
+			[
+				"auto",
+				"Auto Complete: Toggle"
+			],
+			[
+				"ren",
+				"Rename File"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 674.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/kit/git/keywayman/env/requirements.txt",
+		"/home/kit/git/keywayman/blah.py",
+		"/home/kit/git/keywayman/env/create_virtualenv.sh",
+		"/home/kit/git/keywayman/env/source_virtualenv",
+		"/home/kit/git/keywayman/env/install_packages.sh",
+		"/home/kit/git/keywayman/env/requirements_deepspeech.txt",
+		"/home/kit/Dropbox/Projects/pcb/kicad/555_badge/555_badge.net",
+		"/home/kit/git/kitan/ecad/requirements.txt",
+		"/home/kit/Dropbox/Projects/pcb/kicad/555_badge/555_badge/555_badge.sch",
+		"/home/kit/git/kicad-schematic-parser/out.txt",
+		"/home/kit/git/kicad-schematic-parser/out.t",
+		"/home/kit/Downloads/node-v14.15.4-linux-x64/README.md",
+		"/home/kit/git/dotfiles/bash/achille_notes.txt",
+		"/home/kit/.config/Code/CachedExtensionVSIXs/ms-vscode.sublime-keybindings-4.0.7",
+		"/home/kit/package.json",
+		"/mnt/veracrypt/Journal/2021/2021-01-Diary.md",
+		"/mnt/veracrypt/Journal/2020/2020-12-Diary.md",
+		"/home/kit/git/snippets/python/pandas.py",
+		"/home/kit/git/vinci/lib/vinci/time_utils.py",
+		"/home/kit/git/snippets/python/3d/y.txt",
+		"/home/kit/git/snippets/python/3d/out_y.txt.npy",
+		"/home/kit/git/snippets/python/3d/vtk_3d_plot.py",
+		"/home/kit/anaconda3/envs/3DP/lib/python3.7/site-packages/vtkmodules/all.py",
+		"/home/kit/anaconda3/envs/3DP/lib/python3.7/site-packages/tvtk/api.py",
+		"/home/kit/anaconda3/envs/3DP/lib/python3.7/site-packages/vtkmodules/__init__.py",
+		"/home/kit/git/vinci/projects/afuera/client/cpprender/out.txt",
+		"/mnt/veracrypt/Journal/2020/2020-11-Diary.md",
+		"/home/kit/.config/virtualenvs/bdict_venv/lib/python3.8/site-packages/Xlib/ext/xtest.py",
+		"/home/kit/temp/test.py",
+		"/home/kit/.config/virtualenvs/bdict_venv/lib/python3.8/site-packages/pynput/keyboard/__init__.py",
+		"/home/kit/git/better_dictate/backend/parser.py",
+		"/home/kit/git/snippets/python/logging.py",
+		"/home/kit/git/snippets/python/pylint.py",
+		"/home/kit/git/better_dictate/sandbox/parse_test.py",
+		"/home/kit/git/better_dictate/frontend/run.sh",
+		"/home/kit/git/better_dictate/sandbox/websocket_test3.html",
+		"/home/kit/git/better_dictate/frontend/templates/ui.html",
+		"/home/kit/git/better_dictate/sandbox/talon_webspeech_proxy.html",
+		"/home/kit/git/better_dictate/frontend/static/ui.html",
+		"/home/kit/git/better_dictate/env/source_virtualenv",
+		"/home/kit/git/better_dictate/backend/keyboard.py",
+		"/home/kit/git/better_dictate/backend/dictate_globals.py",
+		"/home/kit/git/better_dictate/backend/webspeech.py",
+		"/home/kit/git/vinci/projects/wildeye/demo/clips_server/run.sh",
+		"/home/kit/git/better_dictate/test.py",
+		"/home/kit/git/better_dictate/dictate.py",
+		"/home/kit/git/better_dictate/backend/inference.py",
+		"/home/kit/git/better_dictate/sandbox/websocket_test3.py",
+		"/home/kit/git/better_dictate/backend/stt.py",
+		"/home/kit/git/better_dictate/sandbox/websocket_test1.py",
+		"/home/kit/git/better_dictate/sandbox/websocket_test2.py",
+		"/home/kit/git/better_dictate/sandbox/test.py",
+		"/home/kit/git/better_dictate/config_deepspeech.yaml",
+		"/home/kit/git/better_dictate/audio.py",
+		"/home/kit/git/better_dictate/inference.py",
+		"/home/kit/git/better_dictate/dictate_globals.py",
+		"/home/kit/git/better_dictate/.gitignore",
+		"/home/kit/git/better_dictate/sandbox/websocket_test.py",
+		"/home/kit/git/better_dictate/sandbox/test.html",
+		"/home/kit/git/better_dictate/sandbox/websocket_test1b.py",
+		"/home/kit/git/better_dictate/parser.py",
+		"/home/kit/git/better_dictate/env/create_virtualenv.sh",
+		"/home/kit/git/better_dictate/env/requirements.txt",
+		"/home/kit/git/better_dictate/sandbox/webspeech_demo.html",
+		"/home/kit/git/better_dictate/keyboard.py",
+		"/home/kit/git/better_dictate/env/requirements_deepspeech.txt",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/argument.yml",
+		"/home/kit/git/vinci/lib/vinci/utils.py",
+		"/home/kit/git/vinci/lib/vinci/file_utils.py",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/MiDaS/run.py",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/yo2.yml",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/yo.yml",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/env/source_virtualenv",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/env/requirements.txt",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/env/create_virtualenv.sh",
+		"/home/kit/git/vinci/lib/vinci/messaging/udp.py",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/3d_inpaint.sublime-project",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/main_refactor.py",
+		"/home/kit/git/vinci/projects/afuera/3d_inpainting/mesh.py",
+		"/home/kit/temp/out.txt",
+		"/home/kit/git/tibro/env/create_virtualenv.sh",
+		"/home/kit/git/tibro/env/source_virtualenv",
+		"/home/kit/git/tibro/env/install_python3-8.sh",
+		"/home/kit/git/dotfiles/bash/bashrc_kit.sh",
+		"/home/kit/git/orbit-predictor/orbit_predictor/predictors/base.py",
+		"/mnt/veracrypt/Journal/2020/2020-10-Diary.md",
+		"/home/kit/git/vinci/lib/vinci/gstreamer/python/example_element_inplace.py",
+		"/home/kit/git/vinci/projects/afuera/ken_burns/env/requirements.txt",
+		"/home/kit/git/vinci/projects/afuera/client/env/requirements-python-3.8.txt",
+		"/home/kit/git/vinci/projects/afuera/ken_burns/env/create_virtualenv.sh",
+		"/home/kit/git/vinci/projects/afuera/ken_burns/env/install_cupy.sh",
+		"/home/kit/git/snippets/bash/args.sh",
+		"/home/kit/git/snippets/bash/logic_tests.sh",
+		"/home/kit/git/snippets/bash/cut.sh",
+		"/home/kit/git/vinci/projects/afuera/ken_burns/lib/models/disparity_estimation.py",
+		"/home/kit/git/vinci/projects/afuera/ken_burns/env/source_virtualenv",
+		"/home/kit/git/snippets/bash/blah.sh",
+		"/home/kit/git/snippets/bash/blah2.sh",
+		"/home/kit/git/vinci/projects/afuera/client/env/requirements-python-3.7.txt",
+		"/home/kit/git/vinci/projects/afuera/client/ken_burns/env/requirements.txt",
+		"/home/kit/git/vinci/projects/afuera/client/env/requirements-python-3.",
+		"/home/kit/temp/yo.py",
+		"/home/kit/git/kitan/ken_burns_3d/lib/transforms.py",
+		"/home/kit/git/kitan/ken_burns_3d/lib/cupy_utils.py",
+		"/home/kit/git/kitan/ken_burns_3d/.gitignore",
+		"/home/kit/git/kitan/ken_burns_3d/lib/models/pointcloud_inpainting.py",
+		"/home/kit/git/kitan/ken_burns_3d/lib/models/disparity_estimation.py",
+		"/home/kit/git/kitan/ken_burns_3d/lib/models/disparity_refinement.py",
+		"/home/kit/git/kitan/ken_burns_3d/lib/models/disparity_adjustment.py",
+		"/home/kit/git/kitan/ken-burns-3d/geometry/utils.py",
+		"/home/kit/git/kitan/ken-burns-3d/ken_burns_lib.py",
+		"/home/kit/git/kitan/ken-burns-3d/.gitignore",
+		"/home/kit/git/kitan/ken-burns-3d/models/disparity_estimation.py",
+		"/home/kit/git/kitan/ken-burns-3d/models/pointcloud_inpainting.py",
+		"/home/kit/git/kitan/ken-burns-3d/models/disparity_adjustment.py",
+		"/home/kit/git/kitan/ken-burns-3d/models/disparity_refinement.py",
+		"/home/kit/git/vinci/.pylintrc",
+		"/home/kit/git/3d-ken-burns/.gitignore",
+		"/home/kit/git/3d-ken-burns/requirements.txt",
+		"/home/kit/git/3d-ken-burns/images/README.md",
+		"/home/kit/git/dotfiles/bash/bashrc_linux.sh",
+		"/home/kit/git/3d-ken-burns/env/source_virtualenv",
+		"/home/kit/git/3d-ken-burns/autozoom.py",
+		"/home/kit/git/3d-ken-burns/env/create_virtualenv.sh",
+		"/home/kit/git/vinci/projects/afuera/client/env/create_virtualenv.sh",
+		"/usr/local/etc/no-ip2.conf",
+		"/home/kit/git/dotfiles/bash/bashrc_common.sh",
+		"/home/kit/git/dotfiles/bash/bashrc_vinci.sh"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 131.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" \n",
+			"keyboard_ctlr",
+			"Controller",
+			"KeyboardController",
+			"self.keys",
+			"\"",
+			",",
+			"\"Root\",",
+			"U1",
+			"6027145B",
+			"Connection",
+			"7555",
+			"555_badge",
+			"6027145B",
+			"r3",
+			"out",
+			"U1",
+			"Out",
+			"U1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "keywayman.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								739,
+								739
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "python"
+							},
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "keystrokes.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 21,
+								"count": 3,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "keystrokes.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "python"
+							},
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "blah.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "python"
+							},
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 369.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "keywayman.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/git/snippets/python/flask/templates/ui.html"
+			],
+			[
+				"vtk",
+				"~/git/snippets/python/3d/vtk_reader.py"
+			],
+			[
+				"com",
+				"backend/commands.py"
+			],
+			[
+				"par",
+				"backend/parser.py"
+			],
+			[
+				"pars",
+				"backend/parser.py"
+			],
+			[
+				"key",
+				"backend/keyboard.py"
+			],
+			[
+				"parse",
+				"sandbox/parse_test.py"
+			],
+			[
+				"glo",
+				"backend/dictate_globals.py"
+			],
+			[
+				"dict",
+				"dictate.py"
+			],
+			[
+				"ke",
+				"backend/keyboard.py"
+			],
+			[
+				"keyb",
+				"backend/keyboard.py"
+			],
+			[
+				"ui",
+				"frontend/templates/ui.html"
+			],
+			[
+				"run",
+				"frontend/run.sh"
+			],
+			[
+				"di",
+				"dictate.py"
+			],
+			[
+				"web",
+				"backend/webspeech.py"
+			],
+			[
+				"test",
+				"sandbox/websocket_test3.html"
+			],
+			[
+				"sour",
+				"env/source_virtualenv"
+			],
+			[
+				"k",
+				"backend/keyboard.py"
+			],
+			[
+				"dic",
+				"dictate.py"
+			],
+			[
+				"we",
+				"backend/webspeech.py"
+			],
+			[
+				"d",
+				"dictate.py"
+			],
+			[
+				"inf",
+				"backend/inference.py"
+			],
+			[
+				"stt",
+				"backend/stt.py"
+			],
+			[
+				"conf",
+				"config_deepspeech.yaml"
+			],
+			[
+				"in",
+				"inference.py"
+			],
+			[
+				"aud",
+				"audio.py"
+			],
+			[
+				"tset",
+				"sandbox/test.py"
+			],
+			[
+				"webs",
+				"sandbox/websocket_test1.py"
+			],
+			[
+				"websock",
+				"sandbox/websocket_test.py"
+			],
+			[
+				"tal",
+				"sandbox/talon_webspeech_proxy.html"
+			],
+			[
+				"req",
+				"env/requirements.txt"
+			],
+			[
+				"re",
+				"env/requirements.txt"
+			],
+			[
+				"argu",
+				"3d_inpainting/argument.yml"
+			],
+			[
+				"arg",
+				"3d_inpainting/argument.yml"
+			],
+			[
+				"dept",
+				"3d_inpainting/depth.py"
+			],
+			[
+				"utils",
+				"3d_inpainting/utils.py"
+			],
+			[
+				"util",
+				"3d_inpainting/utils.py"
+			],
+			[
+				"file",
+				"vinci/file_utils.py"
+			],
+			[
+				"ar",
+				"3d_inpainting/argument.yml"
+			],
+			[
+				"mesh",
+				"3d_inpainting/mesh.py"
+			],
+			[
+				"uti",
+				"3d_inpainting/utils.py"
+			],
+			[
+				"midas",
+				"3d_inpainting/MiDaS/MiDaS_utils.py"
+			],
+			[
+				"cam",
+				"3d_inpainting/camera_config.yml"
+			],
+			[
+				"ma",
+				"vinci/gstreamer/magic_window.py"
+			],
+			[
+				"ud",
+				"vinci/messaging/udp.py"
+			],
+			[
+				"cre",
+				"3d_inpainting/env/create_virtualenv.sh"
+			],
+			[
+				"udp",
+				"vinci/messaging/udp.py"
+			],
+			[
+				"main",
+				"main_refactor.py"
+			],
+			[
+				"mes",
+				"mesh.py"
+			],
+			[
+				"so",
+				"env/source_virtualenv"
+			],
+			[
+				"crea",
+				"env/create_virtualenv.sh"
+			],
+			[
+				"lo",
+				"vinci/log.py"
+			],
+			[
+				"log",
+				"vinci/log.py"
+			],
+			[
+				"sou",
+				"source_virtualenv"
+			],
+			[
+				"tra",
+				"lib/transforms.py"
+			],
+			[
+				"env",
+				"env/env.sh"
+			],
+			[
+				"cup",
+				"lib/cupy_utils.py"
+			],
+			[
+				"css",
+				"frontend/static/css/yo2.css"
+			],
+			[
+				"yo2",
+				"frontend/templates/yo2.html"
+			],
+			[
+				"yp2",
+				"sandbox/pynput_test2.py"
+			],
+			[
+				"base",
+				"frontend/templates/base.html"
+			],
+			[
+				"blah",
+				"frontend/static/blah.jsx"
+			],
+			[
+				"yo",
+				"frontend/templates/yo.html"
+			],
+			[
+				"ser",
+				"frontend/server.py"
+			],
+			[
+				"pas",
+				"parser.py"
+			],
+			[
+				"a",
+				"audio.py"
+			],
+			[
+				"audi",
+				"audio.py"
+			],
+			[
+				"au",
+				"audio.py"
+			],
+			[
+				"con",
+				"config_deepspeech.yaml"
+			],
+			[
+				"miv",
+				"sandbox/mic_vad_streaming.py"
+			],
+			[
+				"jso",
+				"inference_output.json"
+			],
+			[
+				"rand",
+				"https://randomwordgenerator.com/sentence.php"
+			],
+			[
+				" ",
+				"sandbox/mic_vad_streaming.py"
+			],
+			[
+				"mic",
+				"sandbox/mic_vad_streaming.py"
+			],
+			[
+				"_2",
+				"inference_output_2.json"
+			],
+			[
+				".gi",
+				".gitignore"
+			],
+			[
+				"infr",
+				"inference.py"
+			],
+			[
+				"x",
+				"~/.config/virtualenvs/bdict_venv/lib/python3.6/site-packages/pynput/keyboard/_xorg.py"
+			],
+			[
+				"py",
+				"sandbox/pynput_test2.py"
+			],
+			[
+				"en",
+				"input_engine.py"
+			],
+			[
+				"pyt",
+				"sandbox/pynput_test2.py"
+			],
+			[
+				"clin",
+				"~/.config/virtualenvs/bdict_venv/lib/python3.6/site-packages/deepspeech/client.py"
+			],
+			[
+				"obj",
+				"tracking/object_detector.py"
+			],
+			[
+				"ann",
+				"tracking/serve_fancycam/templates/annotated_frames.html"
+			],
+			[
+				"vide",
+				"tracking/video_devices.py"
+			],
+			[
+				"geto",
+				"lib/vinci/geometry.py"
+			],
+			[
+				"sup",
+				"tracking/supervisely.py"
+			],
+			[
+				"u",
+				"tracking/uploader.py"
+			],
+			[
+				"data",
+				"tracking/db/database_api.py"
+			],
+			[
+				"h",
+				"tracking/serve_fancycam/templates/annotated_frames.html"
+			],
+			[
+				"ul",
+				"tracking/uploader.py"
+			],
+			[
+				"serve",
+				"tracking/serve_fancycam/server.py"
+			],
+			[
+				"find",
+				"Find Results"
+			],
+			[
+				"tflite",
+				"tracking/tflite_detector.py"
+			],
+			[
+				"dete",
+				"tracking/tfheavy_detector.py"
+			],
+			[
+				"indi",
+				"tracking/db/indices.py"
+			],
+			[
+				"indice",
+				"tracking/db/indices.py"
+			],
+			[
+				"vid",
+				"tracking/video_devices.py"
+			],
+			[
+				"dat",
+				"git add db/database_api.py"
+			],
+			[
+				".",
+				"tracking/.gitignore"
+			],
+			[
+				"serv",
+				"tracking/serve_fancycam/server.py"
+			],
+			[
+				"upl",
+				"tracking/uploader.py"
+			],
+			[
+				"ind",
+				"tracking/db/indices.py"
+			],
+			[
+				"co",
+				"lib/vinci/datasets/coco.py"
+			],
+			[
+				"coco",
+				"lib/vinci/datasets/coco.py"
+			],
+			[
+				"utsi",
+				"tracking/utils.py"
+			],
+			[
+				"jest",
+				"tracking/requirements_jetson.txt"
+			],
+			[
+				"indic",
+				"tracking/db/indices.py"
+			],
+			[
+				"uple",
+				"tracking/uploader.py"
+			],
+			[
+				"aws",
+				"lib/vinci/aws_utils.py"
+			],
+			[
+				"requ ",
+				"requirements_jetson.txt"
+			],
+			[
+				"r",
+				"requirements.txt"
+			],
+			[
+				"j",
+				"requirements_jetson.txt"
+			],
+			[
+				"ob",
+				"object_detector.py"
+			],
+			[
+				"ojb",
+				"object_detector.py"
+			],
+			[
+				"vi",
+				"video_config.json"
+			],
+			[
+				"ut",
+				"utils.py"
+			],
+			[
+				"up",
+				"uploader.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 363.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
