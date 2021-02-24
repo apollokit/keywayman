@@ -32,6 +32,8 @@ SPECIAL_OPERAND_KEYS = {
     'enter': Key.enter,
     'page_down': Key.page_down,
     'page_up': Key.page_up,
+    'home': Key.home,
+    'end': Key.end,
     'f1': Key.f1,
     'f2': Key.f2,
     'f3': Key.f3,
@@ -156,4 +158,5 @@ def execute_keys(keys: List[str]):
             time.sleep(delay_time)
             continue
 
+        logger.debug('Execute {}'.format(hotkey))
         execute_modified_keystroke(keyboard_ctlr, hotkey, HOTKEY_SEPARATOR)

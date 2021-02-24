@@ -1,0 +1,7 @@
+- add a UI
+- add automatic reloading of keystroke yaml whenever the file changes
+- figure out better handling for sticky keys (maybe turn sticky keys off before executing a keystroke sequence?)
+- add recording of keystroke sequence
+- build appropriate delays into the code (maybe always add one after a keystroke with a modifier key?)
+- investigate if there is a better way to handle modifier keys than just inserting delays
+- add slow playback mode with display of current keystroke being executed

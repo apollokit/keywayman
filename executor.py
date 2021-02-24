@@ -39,6 +39,7 @@ def executor_thread(keystrokes_list: List[str]):
             # windows. YMMV with keystrokes other than super+tab
             time.sleep(1.0) # seconds
             execute_keys(keys)
+            logger.debug('Done')
         except Exception:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             traceback.print_exception(exc_type, exc_value, exc_traceback)
