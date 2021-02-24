@@ -1,5 +1,5 @@
 - name: test
-  keys: ["ctrl+a"]
-  # keys: ["delay 1","ctrl+a"]
+  # keys: ["super+tab"]
+  keys: ["super+tab","delay 0.5","a", "b"]
 - name: test
   keys: ["a","b"]

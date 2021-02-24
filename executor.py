@@ -1,5 +1,6 @@
 import logging
 import sys
+import time
 import traceback
 from typing import List
 
@@ -31,6 +32,12 @@ def executor_thread(keystrokes_list: List[str]):
         
         try:
             keys = keystrokes_list[0]['keys']
+            # from testing, we need a delay between the triggering hotkey and
+            # executing keystrokes, if the triggering hotkey uses modifiers.
+            # one second was around the lowest number that guaranteed a
+            # super+tab would actually execute and tab successfully between
+            # windows. YMMV with keystrokes other than super+tab
+            time.sleep(1.0) # seconds
             execute_keys(keys)
         except Exception:
             exc_type, exc_value, exc_traceback = sys.exc_info()
