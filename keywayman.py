@@ -5,7 +5,7 @@ import click
 import yaml
 
 from keystrokes import execute_keys
-
+from keyboard_listener import hotkey_listener
 
 form = "%(asctime)s %(levelname)-8s %(name)-15s %(message)s"
 logging.basicConfig(format=form,
@@ -35,6 +35,11 @@ def go(
     keys = keystrokes_list[0]['keys']
 
     execute_keys(keys)
+
+    hotkey_listener.start()
+
+    while True:
+        pass
 
 if __name__ == '__main__':
     cli()

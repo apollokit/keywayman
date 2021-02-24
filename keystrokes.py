@@ -5,18 +5,14 @@ from typing import List, Tuple
 
 from pynput.keyboard import Key, Controller
 
+from globals import IS_LINUX, USING_STICKY_KEYS
+
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 form = "%(asctime)s %(levelname)-8s %(funcName)-15s %(message)s"
 logging.basicConfig(format=form,
                     datefmt="%H:%M:%S")
-
-# hard-coded config parameters for now...
-# running this on a linux box
-IS_LINUX = True
-# using sticky keys
-USING_STICKY_KEYS = True
 
 # the separator used between separate keys within a hotkey, e.g. 'ctrl+a'
 HOTKEY_SEPARATOR = '+'
