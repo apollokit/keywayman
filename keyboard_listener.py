@@ -6,6 +6,7 @@ import threading
 
 from pynput import keyboard
 
+from events import event_mngr
 from globals import TRIGGER_HOTKEY
 
 logger = logging.getLogger(__name__)
@@ -18,7 +19,8 @@ logging.basicConfig(format=form,
 def on_trigger():
     """Handles hotkey triggering
     """
-    logger.debug('triggered')
+    logger.debug('Triggered')
+    event_mngr.trigger.set()
 
 # from https://pynput.readthedocs.io/en/latest/keyboard.html#monitoring-the-keyboard
 hotkey_listener = keyboard.GlobalHotKeys({

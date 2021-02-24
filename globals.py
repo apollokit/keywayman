@@ -5,4 +5,4 @@ IS_LINUX = True
 USING_STICKY_KEYS = True
 
 # hotkey to trigger keystroke command execution
-TRIGGER_HOTKEY = '<ctrl>+<alt>+y'
+TRIGGER_HOTKEY = '<ctrl>+<alt>+/'

@@ -1,0 +1,5 @@
+- name: test
+  keys: ["ctrl+a"]
+  # keys: ["delay 1","ctrl+a"]
+- name: test
+  keys: ["a","b"]
